@@ -32,11 +32,14 @@ public class CriteriaChecker {
 
             if (Character.isUpperCase(character)) {
                 hasAnUpper = true;
-            } else if (Character.isLowerCase(character)) {
+            }
+            if (Character.isLowerCase(character)) {
                 hasALower = true;
-            } else if (Character.isDigit(character)) {
+            }
+            if (Character.isDigit(character)) {
                 hasADigit = true;
-            } else if (specialCharacters.indexOf(character) != -1) {
+            }
+            if (specialCharacters.indexOf(character) != -1) {
                 hasASpecial = true;
             }
         }
